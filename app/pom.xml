@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-            <version>1.5.11.RELEASE</version>
+            <version>${spring.security.version}</version>
         </dependency>
     </dependencies>
 
