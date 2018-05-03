@@ -23,6 +23,9 @@
 		<java.version>1.8</java.version>
 
 		<spring.cloud.version>1.4.3.RELEASE</spring.cloud.version>
+
+		<docker.version>1.4.0</docker.version>
+		<docker.repository>spring-cloud-config</docker.repository>
 	</properties>
 
 	<modules>
