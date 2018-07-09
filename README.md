@@ -51,3 +51,5 @@ b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePro
 s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
 br.com.emmanuelneri.app.AppConfig        : Started AppConfig in 7.493 seconds (JVM running for 11.064)
 ```
+
+Obs: Para acessar as URLs do Config Server basta utilizar usuário e senha `config`.
