@@ -21,7 +21,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-            <version>${spring.security.version}</version>
         </dependency>
     </dependencies>
 
@@ -34,7 +33,7 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>${docker.version}</version>
+                <version>${docker.spotify.plugin.version}</version>
                 <configuration>
                     <repository>${docker.repository}/${project.artifactId}</repository>
                 </configuration>
