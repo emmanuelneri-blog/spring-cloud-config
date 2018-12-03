@@ -30,7 +30,6 @@
 
 	<modules>
         <module>app</module>
-        <module>web</module>
 		<module>server</module>
     </modules>
 
