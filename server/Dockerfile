@@ -8,5 +8,5 @@ RUN apk upgrade --update && \
     apk del curl unzip && \
     rm -rf /tmp/* /var/cache/apk/*
 
-COPY target/server-*.jar app.jar
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app.jar"]
+ADD target/server-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT [ "sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]

@@ -16,10 +16,10 @@ public class CloudConfigAppConfig extends WebSecurityConfigurerAdapter {
         SpringApplication.run(CloudConfigAppConfig.class, args);
     }
 
-    @Value("${spring.security.user.name}")
+    @Value("${security.user.name}")
     private String user;
 
-    @Value("${spring.security.user.password}")
+    @Value("${security.user.password}")
     private String password;
 
     @Override
@@ -35,7 +35,7 @@ public class CloudConfigAppConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
                 .withUser(user)
-                .password("{noop}" + password)
+                .password(password)
                 .roles("ADMIN");
     }
 }
